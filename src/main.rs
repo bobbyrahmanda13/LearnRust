@@ -20,8 +20,8 @@ fn main() {
 
     // sedangkan stdin adalah function yang ada pada io module (modul io)
     io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
+        .read_line(&mut guess) // membaca variable guess yang sudah di deklarasikan
+        .expect("Failed to read line"); // jika gagal membaca variable akan muncul pesan gagal
 
     println!("You Guess : {}", guess);
 

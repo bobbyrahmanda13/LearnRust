@@ -4,7 +4,7 @@
 
 // note ! std = standart library rust
 // :: operator ini pemisah sepertinya
-// io adalah module yg ada di standard library rust
+// io (input and output (io)) adalah module yg ada di standard library rust
 use std::io;
 
 fn main() {

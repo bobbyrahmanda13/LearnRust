@@ -8,6 +8,13 @@
 use std::io;
 
 fn main() {
+    // Baris ini mencetak string yang sekarang berisi masukan pengguna. Kumpulan tanda kurung kurawal {} adalah pengganti: bayangkan {} sebagai penjepit kepiting kecil yang menyimpan nilai pada tempatnya. Saat mencetak nilai suatu variabel, nama variabel dapat dimasukkan ke dalam tanda kurung kurawal. Saat mencetak hasil evaluasi ekspresi, tempatkan tanda kurung kurawal kosong di string format, lalu ikuti string format dengan daftar ekspresi yang dipisahkan koma untuk dicetak di setiap placeholder tanda kurung kurawal kosong dalam urutan yang sama. Mencetak variabel dan hasil ekspresi dalam satu panggilan ke println! akan terlihat seperti ini:
+
+    let x = 5;
+    let y = 10;
+
+    println!("x = {x} and y + 2 = {}", y + 2);
+
     println!("Guess the number");
 
     println!("Please input your guess.");

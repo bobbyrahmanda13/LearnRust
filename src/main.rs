@@ -24,5 +24,4 @@ fn main() {
         .expect("Failed to read line"); // jika gagal membaca variable akan muncul pesan gagal
 
     println!("You Guess : {}", guess);
-
 }

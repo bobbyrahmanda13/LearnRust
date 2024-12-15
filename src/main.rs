@@ -5,6 +5,7 @@
 // note ! std = standart library rust
 // :: operator ini pemisah sepertinya
 // io (input and output (io)) adalah module yg ada di standard library rust
+use rand::Rng;
 use std::io;
 
 fn main() {
@@ -14,6 +15,10 @@ fn main() {
     let y = 10;
 
     println!("x = {x} and y + 2 = {}", y + 2);
+
+    let secret_number = rand::rng().random_range(1..=100);
+
+    println!("The secret number is: {secret_number}.list");
 
     println!("Guess the number");
 

@@ -6,6 +6,7 @@
 // :: operator ini pemisah sepertinya
 // io (input and output (io)) adalah module yg ada di standard library rust
 use rand::Rng;
+use std::cmp::Ordering;
 use std::io;
 
 fn main() {
@@ -35,5 +36,14 @@ fn main() {
         .read_line(&mut guess) // membaca variable guess yang sudah di deklarasikan
         .expect("Failed to read line"); // jika gagal membaca variable akan muncul pesan gagal
 
-    println!("You Guess : {}", guess);
+    let guess: u32 = guess.trim().parse().expect("please type a number!");
+
+    // println!("You Guess : {}", guess);
+    println!("You Guess : {guess}");
+
+    match guess.cmp(&secret_number) {
+        Ordering::Less => println!("too Small!"),
+        Ordering::Greater => println!("too Big"),
+        Ordering::Equal => println!("You Win"),
+    }
 }

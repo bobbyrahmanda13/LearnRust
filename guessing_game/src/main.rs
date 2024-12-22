@@ -23,27 +23,36 @@ fn main() {
 
     println!("Guess the number");
 
-    println!("Please input your guess.");
+    loop {
+        println!("Please input your guess.");
 
-    // example
-    // let guess = String::new() // ini immutable => ini mirip const yang tidak bisa diubah di js
-    // let guess = String::new() // ini mutable => ini mirip let yang ada di js yang bisa di ubah
+        // example
+        // let guess = String::new() // ini immutable => ini mirip const yang tidak bisa diubah di js
+        // let guess = String::new() // ini mutable => ini mirip let yang ada di js yang bisa di ubah
 
-    let mut guess = String::new();
+        let mut guess = String::new();
 
-    // sedangkan stdin adalah function yang ada pada io module (modul io)
-    io::stdin()
-        .read_line(&mut guess) // membaca variable guess yang sudah di deklarasikan
-        .expect("Failed to read line"); // jika gagal membaca variable akan muncul pesan gagal
+        // sedangkan stdin adalah function yang ada pada io module (modul io)
+        io::stdin()
+            .read_line(&mut guess) // membaca variable guess yang sudah di deklarasikan
+            .expect("Failed to read line"); // jika gagal membaca variable akan muncul pesan gagal
 
-    let guess: u32 = guess.trim().parse().expect("please type a number!");
+        // let guess: u32 = guess.trim().parse().expect("please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
-    // println!("You Guess : {}", guess);
-    println!("You Guess : {guess}");
-
-    match guess.cmp(&secret_number) {
-        Ordering::Less => println!("too Small!"),
-        Ordering::Greater => println!("too Big"),
-        Ordering::Equal => println!("You Win"),
+        // println!("You Guess : {}", guess);
+        println!("You Guess : {guess}");
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("too Small!"),
+            Ordering::Greater => println!("too Big"),
+            Ordering::Equal => {
+                println!("You Win");
+                break; // digunakan agar bisa keluar dari perulangan ketika game nya menang dan
+                       // berhasil menebak angka yang muncul
+            }
+        }
     }
 }

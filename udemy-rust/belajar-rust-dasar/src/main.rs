@@ -8,7 +8,7 @@ fn main() {
     print!("Hello, world!");
 }
 
-#[test]
+#[test] // ini adalah attribut / anotation (pada typescript ini disebut decorator)
 fn hello_test() {
     println!("hello test")
 }

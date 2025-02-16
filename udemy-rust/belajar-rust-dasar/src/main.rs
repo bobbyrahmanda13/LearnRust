@@ -12,3 +12,14 @@ fn main() {
 fn hello_test() {
     println!("hello test")
 }
+
+#[test]
+fn test_variable() {
+    // let name = "Bobby Rahmanda";
+    // let name2 = "Bobby Rahmanda";
+    // println!("Hello {} {}", name, name2);
+
+    let first_name = "Bobby";
+    let last_name = "Rahmanda";
+    println!("Hello {} {}", first_name, last_name);
+}

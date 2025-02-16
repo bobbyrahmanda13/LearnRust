@@ -14,6 +14,11 @@ fn hello_test() {
 }
 
 #[test]
+// # Variable
+// variable adalah tempat untuk menyimpan data
+// cara membuat variable di Rust bisa menggunakan kata kunci "let"
+// setelah variable diisi data, maka data itu tidak bisa diubah lagi
+// note : jika sudah buat variable menggunakan "let" maka data itu tidak bisa di ubah lagi
 fn test_variable() {
     // let name = "Bobby Rahmanda";
     // let name2 = "Bobby Rahmanda";
@@ -22,4 +27,18 @@ fn test_variable() {
     let first_name = "Bobby";
     let last_name = "Rahmanda";
     println!("Hello {} {}", first_name, last_name);
+}
+
+#[test]
+fn test_mutable() {
+    // # Mutable
+    // seperti dijelaskan sebelumnya, Variable yang sudah di isi datanya tidak bisa diubah lagi atau disebut "immutable"
+    // Namun Rust juga memperbolehkan jika kita ingin membuat variable yang bisa diubah lagi, atau disebut Mutable
+    // Caranya kita bisa gunakan kata kunci "let mut" ketika membuat variable
+
+    let mut namee = "Bobby Rahmanda";
+    println!("Hello {}", namee);
+
+    namee = "Lidya Jelek";
+    println!("Hello {}", namee);
 }

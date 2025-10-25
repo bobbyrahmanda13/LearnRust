@@ -54,6 +54,15 @@ fn static_typing() {
     let mut name = "Windy An-nisa";
     println!("Hello {}", name);
 
-    name = "I Love You";
+    name = 10;
     println!("Selamat Pagi Sayang {}", name);
+}
+
+#[test]
+fn shadowing() {
+    let name = "Bobby Rahmanda";
+    println!("Hello {}", name);
+
+    let name = 10;
+    println!("Hello {}", name);
 }

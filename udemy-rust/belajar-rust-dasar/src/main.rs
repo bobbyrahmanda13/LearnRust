@@ -26,7 +26,8 @@ fn test_variable() {
 
     let first_name = "Bobby";
     let last_name = "Rahmanda";
-    println!("Hello {} {}", first_name, last_name);
+    let lala = "pergi";
+    println!("Hello {} {} {}", first_name, last_name, lala);
 }
 
 #[test]

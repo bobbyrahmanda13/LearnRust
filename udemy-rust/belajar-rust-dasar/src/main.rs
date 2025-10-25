@@ -41,7 +41,7 @@ fn test_mutable() {
     namee = "Lidya Jelek";
     println!("Hello {}", namee);
 
-    let mut taik = "tarik";
+    let mut taik = "taik";
     println!("hello {}", taik);
 
     taik = "jancok";

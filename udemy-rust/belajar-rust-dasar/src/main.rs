@@ -48,3 +48,12 @@ fn test_mutable() {
     taik = "jancok";
     println!("hello {}", taik);
 }
+
+#[test]
+fn static_typing() {
+    let mut name = "Windy An-nisa";
+    println!("Hello {}", name);
+
+    name = "I Love You";
+    println!("Selamat Pagi Sayang {}", name);
+}

@@ -79,5 +79,6 @@ ini adalah komentar dari satu baris
 */
 #[test]
 fn comment() {
-    println!("Hello"); // ini adalah komentar
+    let windy = "Sayang";
+    println!("Hello {}", windy); // ini adalah komentar
 }

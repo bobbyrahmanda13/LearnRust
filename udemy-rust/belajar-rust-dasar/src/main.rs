@@ -71,3 +71,13 @@ fn shadowing() {
     let names = 10;
     println!("Hello {}", names);
 }
+
+/*
+ini adalah komentar dari satu baris
+ini adalah komentar dari satu baris
+ini adalah komentar dari satu baris
+*/
+#[test]
+fn comment() {
+    println!("Hello"); // ini adalah komentar
+}

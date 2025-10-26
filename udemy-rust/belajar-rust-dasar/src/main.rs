@@ -82,3 +82,12 @@ fn comment() {
     let windy = "Sayang";
     println!("Hello {}", windy); // ini adalah komentar
 }
+
+#[test]
+fn explicit() {
+    let age: i32 = 20;
+    println!("{}", age);
+
+    let ag: i32 = 222222222;
+    println!("{}", ag);
+}

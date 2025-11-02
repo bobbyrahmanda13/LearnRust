@@ -55,21 +55,21 @@ fn test_mutable() {
 
 #[test]
 fn static_typing() {
-    let mut name = "Windy An-nisa";
-    println!("Hello {}", name);
+    let mut name = "windy an-nisa";
+    println!("hello {}", name);
 
     // name = 10;
-    name = "Bobby Rahmanda";
-    println!("Selamat Pagi Sayang {}", name);
+    name = "bobby rahmanda";
+    println!("selamat pagi sayang {}", name);
 }
 
 #[test]
 fn shadowing() {
-    let names = "Bobby Rahmanda";
-    println!("Hello {}", names);
+    let names = "bobby rahmanda";
+    println!("hello {}", names);
 
     let names = 10;
-    println!("Hello {}", names);
+    println!("hello {}", names);
 }
 
 /*
@@ -79,8 +79,8 @@ ini adalah komentar dari satu baris
 */
 #[test]
 fn comment() {
-    let windy = "Sayang";
-    println!("Hello {}", windy); // ini adalah komentar
+    let windy = "sayang";
+    println!("hello {}", windy); // ini adalah komentar
 }
 
 #[test]
@@ -91,3 +91,20 @@ fn explicit() {
     let ag: i32 = 222222222;
     println!("{}", ag);
 }
+
+/*
+* Type Data
+- Integer Type (Bilangan Bulat)
+Panjang | Signed | Unsigned|
+8-bit   | i8     | u8
+16-bit  | i16    | u16
+32-bit  | i32    | u32
+64-bit  | i64    | u64
+128-bit | i128   | u128
+
+note:
+Panjang = type bilangan bulat
+Signed = type bisa negatif bisa positif
+Unsigned = type yg hanya bisa positif aja
+a
+*/

@@ -94,7 +94,7 @@ fn explicit() {
 
 /*
 * Type Data
-- Integer Type (Bilangan Bulat)
+- Integer Type (Bilangan Bulat) (default: i32)
 Panjang | Signed | Unsigned|
 8-bit   | i8     | u8
 16-bit  | i16    | u16
@@ -104,7 +104,15 @@ Panjang | Signed | Unsigned|
 
 note:
 Panjang = type bilangan bulat
-Signed = type bisa negatif bisa positif
-Unsigned = type yg hanya bisa positif aja
-a
+Signed = type bisa negatif bisa positif ( bisa dimulai dari negatif )
+Unsigned = type yg hanya bisa positif aja (dimulai dari 0)
+
+* Float Type (default: 64-bit (f64))
+
+Panjang | FLoat |
+32-bit   | f32
+64-bit   | f64
+
+
+
 */

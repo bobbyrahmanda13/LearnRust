@@ -107,7 +107,7 @@ Panjang = type bilangan bulat
 Signed = type bisa negatif bisa positif ( bisa dimulai dari negatif )
 Unsigned = type yg hanya bisa positif aja (dimulai dari 0)
 
-* Float Type (default: 64-bit (f64))
+* Float Type (default: 64-bit (f64)) (bilangan decimal, pecahan)
 
 Panjang | FLoat |
 32-bit   | f32

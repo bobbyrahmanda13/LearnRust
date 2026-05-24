@@ -55,12 +55,12 @@ fn test_mutable() {
 
 #[test]
 fn static_typing() {
-    let mut name = "windy an-nisa";
+    let mut name = "Riko Bulek";
     println!("hello {}", name);
 
     // name = 10;
     name = "bobby rahmanda";
-    println!("selamat pagi sayang {}", name);
+    println!("selamat pagi jancok {}", name);
 }
 
 #[test]
@@ -79,8 +79,8 @@ ini adalah komentar dari satu baris
 */
 #[test]
 fn comment() {
-    let windy = "sayang";
-    println!("hello {}", windy); // ini adalah komentar
+    let riko = "sayang";
+    println!("hello {}", riko); // ini adalah komentar
 }
 
 #[test]
@@ -112,7 +112,5 @@ Unsigned = type yg hanya bisa positif aja (dimulai dari 0)
 Panjang | FLoat |
 32-bit   | f32
 64-bit   | f64
-
-
 
 */
